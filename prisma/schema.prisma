@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Tabela de Usuários com as regras do Guia da Equipe
+model User {
+  id            String    @id @default(uuid())
+  name          String
+  email         String    @unique
+  status        String    @default("ACTIVE")
+  roles         String    // Salvaremos como texto: "PARTICIPANT" ou "MANAGER"
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  deactivatedAt DateTime? // O ponto de interrogação indica que é opcional
+}
