@@ -1,6 +1,13 @@
 # FACOFFEE - Users Service
 
+# Alunos:
+* Lucas Renato Corrêa
+* Natan Alves 
+* Gabriel Henrique Ribeiro da Silva
+* Vitor Brambila
+
 Este repositório contém a implementação do **microsserviço de Usuários (Users Service)** da solução **FACOFFEE**.
+
 
 ## 1. Objetivo do serviço
 
